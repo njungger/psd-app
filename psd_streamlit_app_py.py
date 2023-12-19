@@ -39,8 +39,8 @@ if image:
     st.header("foto yang diupload")
     st.image(image)
 
-submit = st.button("submit")
+# submit = st.button("submit")
 
-if submit:
+if st.button("submit"):
     hasil = klasifikasi(image)
     st.succes(hasil)

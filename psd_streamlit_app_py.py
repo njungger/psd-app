@@ -29,7 +29,7 @@ def klasifikasi(image):
     class_index = np.argmax(predictions[0])
     class_name = classes[class_index]
 
-    print(f'Predicted Class: {class_name}')
+    return (f'Predicted Class: {class_name}')
 
 st.title("klasifikasi penyakit daun dengan metode cnn")
 
@@ -43,4 +43,4 @@ if image:
 
 if st.button("submit"):
     hasil = klasifikasi(image)
-    st.succes(hasil)
+    st.text(hasil)

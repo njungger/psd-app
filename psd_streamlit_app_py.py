@@ -13,7 +13,7 @@ from PIL import Image
 import numpy as np
 import joblib
 
-model = joblib.load('/content/drive/MyDrive/saved model/saved_model.pkl')
+model = joblib.load('saved_model.pkl')
 
 def klasifikasi(image):
 
